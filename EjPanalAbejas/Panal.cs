@@ -68,19 +68,17 @@ namespace EjPanalAbejas
             float scaledSideLength = sideLength * scaleFactor;
             float a = scaledSideLength * (float)Math.Sqrt(3) / 2;
 
-
             Bitmap bitmap = new Bitmap(picCanvas.Width, picCanvas.Height);
             using (Graphics g = Graphics.FromImage(bitmap))
             {
-                g.Clear(Color.White);
+                g.Clear(Color.FromArgb(255, 255, 153, 0));
 
-                // Calcular el número de hexágonos necesarios
-                int numHexagonsX = (int)Math.Ceiling(picCanvas.Width / (1.5f * scaledSideLength)) + 1;
-                int numHexagonsY = (int)Math.Ceiling(picCanvas.Height / (a * 2)) + 1;
+                int numHexagonsX = (int)Math.Ceiling(picCanvas.Width / (1.5f * scaledSideLength));
+                int numHexagonsY = (int)Math.Ceiling(picCanvas.Height / (a * 2));
 
-                for (int i = 0; i < numHexagonsY; i++)
+                for (int i = 0; i < numHexagonsY + 1; i++)
                 {
-                    for (int j = 0; j < numHexagonsX; j++)
+                    for (int j = 0; j < numHexagonsX + 1; j++)
                     {
                         float offsetX = j * 1.5f * scaledSideLength;
                         float offsetY = i * a * 2;
@@ -100,6 +98,7 @@ namespace EjPanalAbejas
 
             picCanvas.Image = bitmap;
         }
+
     }
 
 }
