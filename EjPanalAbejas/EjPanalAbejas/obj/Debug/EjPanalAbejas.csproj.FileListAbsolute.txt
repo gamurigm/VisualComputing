@@ -1,0 +1,10 @@
+C:\Users\gamur\source\repos\EjPanalAbejas\bin\Debug\EjPanalAbejas.exe.config
+C:\Users\gamur\source\repos\EjPanalAbejas\bin\Debug\EjPanalAbejas.exe
+C:\Users\gamur\source\repos\EjPanalAbejas\bin\Debug\EjPanalAbejas.pdb
+C:\Users\gamur\source\repos\EjPanalAbejas\obj\Debug\EjPanalAbejas.csproj.AssemblyReference.cache
+C:\Users\gamur\source\repos\EjPanalAbejas\obj\Debug\EjPanalAbejas.Panal.resources
+C:\Users\gamur\source\repos\EjPanalAbejas\obj\Debug\EjPanalAbejas.Properties.Resources.resources
+C:\Users\gamur\source\repos\EjPanalAbejas\obj\Debug\EjPanalAbejas.csproj.GenerateResource.cache
+C:\Users\gamur\source\repos\EjPanalAbejas\obj\Debug\EjPanalAbejas.csproj.CoreCompileInputs.cache
+C:\Users\gamur\source\repos\EjPanalAbejas\obj\Debug\EjPanalAbejas.exe
+C:\Users\gamur\source\repos\EjPanalAbejas\obj\Debug\EjPanalAbejas.pdb
