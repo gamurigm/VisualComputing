@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace EjPanalAbejas
 {
     internal class Hexagon
@@ -34,12 +35,12 @@ namespace EjPanalAbejas
         public void Draw(Graphics g, float offsetX, float offsetY)
         {
             CalculatePoints(offsetX, offsetY);
-            Brush fillBrush = new SolidBrush(Color.FromArgb(255, 255, 153, 0)); 
-            Pen borderPen = new Pen(Color.Black,1);
-
-            g.FillPolygon(fillBrush, Points);
-            g.DrawPolygon(borderPen, Points);
+            using (Brush fillBrush = new SolidBrush(Color.FromArgb(255, 255, 153, 0)))
+            using (Pen borderPen = new Pen(Color.Black, 1))
+            {
+                g.FillPolygon(fillBrush, Points);
+                g.DrawPolygon(borderPen, Points);
+            }
         }
     }
 }
-

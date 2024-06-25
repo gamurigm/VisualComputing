@@ -18,7 +18,9 @@ namespace EjPanalAbejas
         public Panal()
         {
             InitializeComponent();
+            picCanvas.Dock = DockStyle.Fill;
             picCanvas.Resize += PicCanvas_Resize;
+            this.Resize += Panal_Resize;
             btnGraficar.Click += BtnGraficar_Click;
             btnLimpiar.Click += BtnLimpiar_Click;
             btnSalir.Click += BtnSalir_Click;
@@ -89,7 +91,6 @@ namespace EjPanalAbejas
                             offsetY += a;
                         }
 
-                        // Dibujar el hexágono
                         Hexagon hex = new Hexagon(scaledSideLength);
                         hex.Draw(g, offsetX, offsetY);
                     }
@@ -98,6 +99,14 @@ namespace EjPanalAbejas
 
             picCanvas.Image = bitmap;
         }
+
+        private void Panal_Resize(object sender, EventArgs e)
+{
+    if (sideLength > 0)
+    {
+        DrawHexagons();
+    }
+}
 
     }
 
