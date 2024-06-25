@@ -12,7 +12,7 @@ namespace EjPanalAbejas
 {
     public partial class Panal : Form
     {
-        private int sideLength;
+        private float sideLength;
         private float scaleFactor = 10.0f;
 
         public Panal()
@@ -30,7 +30,7 @@ namespace EjPanalAbejas
 
         private void BtnGraficar_Click(object sender, EventArgs e)
         {
-            if (int.TryParse(txtLado.Text, out sideLength) && sideLength > 0)
+            if (float.TryParse(txtLado.Text, out  sideLength) && sideLength > 0)
             {
                 if (float.TryParse(txtLado.Text, out scaleFactor) && scaleFactor > 0)
                 {
